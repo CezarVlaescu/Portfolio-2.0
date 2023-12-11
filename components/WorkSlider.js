@@ -40,16 +40,6 @@ const workSlides = {
     {
       images: [
         {
-          title: "Daily Planner",
-          path: "/5-Reasons-Why-Your-Residential-Building-Needs-a-Professional-Gym-Banner-1200x620.jpg",
-          link: "https://github.com/CezarVlaescu/DailyPlanner-Angular-.NET-SSMS-App"
-        },
-        {
-          title: "Quiz App",
-          path: "/images (1).jpeg",
-          link: "https://github.com/CezarVlaescu/Quiz-App-React-GraphQL-MongoDB"
-        },
-        {
           title: "Password Generator",
           path: "/best-tools-generate-strong-secure-random-password.jpg",
           link: "https://github.com/CezarVlaescu/Pycharm---Python-Code/tree/main/Password%20Generator%20App"
@@ -59,7 +49,16 @@ const workSlides = {
           path: "/read-my-blog-compressed.jpg",
           link: "https://github.com/CezarVlaescu/Pycharm---Python-Code/tree/main/Final%20Project%20-%20Django%20App"
         },
-
+        {
+          title: "Daily Planner",
+          path: "/5-Reasons-Why-Your-Residential-Building-Needs-a-Professional-Gym-Banner-1200x620.jpg",
+          link: "https://github.com/CezarVlaescu/DailyPlanner-Angular-.NET-SSMS-App"
+        },
+        {
+          title: "Quiz App",
+          path: "/images1.jpeg",
+          link: "https://github.com/CezarVlaescu/Quiz-App-React-GraphQL-MongoDB"
+        },
       ],
     },
     {
