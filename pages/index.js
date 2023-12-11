@@ -20,7 +20,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Hello, I'm Vlaescu Cezar <br /> {" "}
+            Hello, I am Vlaescu Cezar <br /> {" "}
             <span className="text-accent">Fullstack Developer</span>
           </motion.h1>
           {/* subtitle */}
@@ -31,7 +31,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            "Learn from yesterday, live for today, hope for tomorrow"
+            Learn from yesterday, live for today, hope for tomorrow
           </motion.p>
           {/**btn*/}
           <div className="flex justify-center xl:hidden relative">

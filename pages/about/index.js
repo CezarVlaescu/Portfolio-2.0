@@ -52,52 +52,52 @@ const aboutData = [
       {
         title: "Frontend Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <SiTypescript />,
-          <FaSass />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaAngular />,
-          <SiTailwindcss />,
-          <SiJquery />,
-          <FaBootstrap />
+          <FaHtml5 key={"html5"}/>,
+          <FaCss3 key={"css3"}/>,
+          <FaJs key={"js"}/>,
+          <SiTypescript key={"typescript"}/>,
+          <FaSass key={"sass"}/>,
+          <FaReact key={"react"}/>,
+          <SiNextdotjs key={"nextdotjs"}/>,
+          <FaAngular key={"angular"}/>,
+          <SiTailwindcss key={"tailwindcss"}/>,
+          <SiJquery key={"jquery"}/>,
+          <FaBootstrap key={"bootstrap"}/>
         ],
       },
       {
         title: "Backend Development",
         icons : [
-          <SiCsharp />,
-          <FaPython />,
-          <FaJava />,
-          <FaNodeJs />,
-          <SiDotnet />,
-          <SiDjango />,
-          <SiSpringboot />
+          <SiCsharp key={"sisharp"}/>,
+          <FaPython key={"python"}/>,
+          <FaJava key={"java"}/>,
+          <FaNodeJs key={"nodejs"}/>,
+          <SiDotnet key={"dotnet"}/>,
+          <SiDjango key={"django"}/>,
+          <SiSpringboot key={"springboot"}/>
         ]
       },
       {
         title: "Database Development",
         icons: [
-          <SiMysql />,
-          <SiPostgresql />,
-          <SiMongodb />,
-          <SiFirebase />,
-          <SiMicrosoftsqlserver />,
-          <SiGraphql />
+          <SiMysql key={"mysql"}/>,
+          <SiPostgresql key={"postgresql"}/>,
+          <SiMongodb key={"mongodb"}/>,
+          <SiFirebase key={"firebase"}/>,
+          <SiMicrosoftsqlserver key={"microsoftsqlserver"}/>,
+          <SiGraphql key={"graphql"}/>
         ]
       },
       {
         title: "Misscellaneous Skills",
         icons: [
-          <SiMicrosoftazure />,
-          <FaAws />,
-          <SiPostman />,
-          <FaLinux />,
-          <FaGitAlt />,
-          <SiSelenium />,
-          <SiWebauthn />
+          <SiMicrosoftazure key={"azure"}/>,
+          <FaAws key={"aws"}/>,
+          <SiPostman key={"postman"}/>,
+          <FaLinux key={"linux"}/>,
+          <FaGitAlt key={"gitalt"}/>,
+          <SiSelenium key={"selenium"}/>,
+          <SiWebauthn key={"webauthn"}/>
         ]
       }
     ],
@@ -210,7 +210,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Technology isn't just my passion—it's my life. I pride myself on being dynamic, disciplined, and adaptable.<br></br>My dedication to continuous learning and the projects I've undertaken have shaped the intellectual growth I strive for as a programmer.
+            Technology is not just my passion its my life. I pride myself on being dynamic, disciplined, and adaptable.<br></br>My dedication to continuous learning and the projects I have undertaken have shaped the intellectual growth I strive for as a programmer.
           </motion.p>
           {/**counters*/}
           <motion.div
@@ -289,7 +289,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/*icons*/}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div className="text-2xl text-white" key={itemIndex}>{icon}</div>;
                     })}
                   </div>
                 </div>
