@@ -1,7 +1,6 @@
 import { Sora } from '@next/font/google';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
-import TopLeftImg from '../components/TopLeftImg';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -12,7 +11,6 @@ const sora = Sora({
 const Layout = ({children}) => {
   return (
   <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-    <TopLeftImg />
     <Nav />
     <Header />
     {children}

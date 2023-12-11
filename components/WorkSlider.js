@@ -8,47 +8,81 @@ import { Pagination } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 // data
 const workSlides = {
   slides: [
     {
       images: [
         {
-          title: "Product Tracker &",
-          subtitle : "Machine Learning",
+          title: "Product Tracker & Machine Learning" ,
           path: "/Advantages-Of-Web-Scraping-And-Its-Impact-On-The-Digital-World-Banner.png",
+          link: "https://github.com/CezarVlaescu/Machine-Learning-Project---Python"
         },
         {
           title: "WebScraper MERN-App",
           path: "/webscraping-beginner-1.jpg",
+          link: "https://github.com/CezarVlaescu/WebScraper--Fullstack-MERN-App"
         },
         {
-          title: "Quiz App",
-          path: "/images (1).jpeg",
-        },
-        {
-          title: "BookiePal Blockchain Fullstack App",
+          title: "BookiePal Blockchain Freelance",
           path: "/flora-teasereinstiegs-bild.jpg",
+          link: ""
+        },
+        {
+          title: "E-commerce Freelance Project",
+          path: "/e-commerce-1.jpg",
+          link: ""
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Daily Planner",
+          path: "/5-Reasons-Why-Your-Residential-Building-Needs-a-Professional-Gym-Banner-1200x620.jpg",
+          link: "https://github.com/CezarVlaescu/DailyPlanner-Angular-.NET-SSMS-App"
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "Quiz App",
+          path: "/images (1).jpeg",
+          link: "https://github.com/CezarVlaescu/Quiz-App-React-GraphQL-MongoDB"
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Password Generator",
+          path: "/best-tools-generate-strong-secure-random-password.jpg",
+          link: "https://github.com/CezarVlaescu/Pycharm---Python-Code/tree/main/Password%20Generator%20App"
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "My Blog in Django",
+          path: "/read-my-blog-compressed.jpg",
+          link: "https://github.com/CezarVlaescu/Pycharm---Python-Code/tree/main/Final%20Project%20-%20Django%20App"
+        },
+
+      ],
+    },
+    {
+      images: [
+        {
+          title: "String Convertor",
+          path: "/Python-Convert-String-to-int.png",
+          link: "https://github.com/CezarVlaescu/Visual-Studio--C-sharp/blob/master/ProjectFortech/Program.cs"
+        },
+        {
+          title: "Caesar's Cipher",
+          path: "/ceaserCipher.png",
+          link: "https://github.com/CezarVlaescu/Caesar-Cipher---Frontend-Project-and-Backend-Code"
+        },
+        {
+          title: "New ideas coming",
+          path: "/newproject.jpg",
+          link: ""
+        },
+        {
+          title: "New ideas coming",
+          path: "/newproject.jpg",
+          link: ""
         },
       ],
     },
@@ -56,6 +90,13 @@ const workSlides = {
 };
 
 const WorkSlider = () => {
+
+  const router = useRouter(); 
+
+  const handleClick = (url) => {
+    router.push(url); 
+  }
+
   return (
     <Swiper
       spaceBetween={10}
@@ -71,7 +112,7 @@ const WorkSlider = () => {
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
-                  <div className="relative rounded-lg overflow-hidden flex item-center justify-center group" key={index}>
+                  <div className="relative rounded-lg overflow-hidden flex item-center justify-center group" key={index} onClick={() => handleClick(image.link) || '#'}>
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
@@ -82,8 +123,6 @@ const WorkSlider = () => {
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* title part 1*/}
                           <div className="delay-100">{image.title}</div>
-                          {/* title part 2*/}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">{image.subtitle}</div>
                           {/*icon*/}
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                             <BsArrowRight />

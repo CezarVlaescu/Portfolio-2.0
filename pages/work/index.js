@@ -6,7 +6,7 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/10 py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -27,8 +27,7 @@ const Work = () => {
             animate="show"
             exit="hidden"
             className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adip ex ante
-              Lorem Ipsum u
+              Each project represents a significant step in my professional development, demonstrating my ability to adapt to different technologies and solve complex problems.
             </motion.p>
           </div>
           <motion.div 

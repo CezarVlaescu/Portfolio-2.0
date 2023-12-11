@@ -11,25 +11,25 @@ import Image from "next/image";
 // testimonial data
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/jan-philipp-esch.256x256-modified.png",
+    name: "Jan-Philipp Esch",
+    position: "Software Architect - SAP - 10 years experience",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I've encountered many emerging talents, but Cezar truly stands out. I've observed his journey and growth in the field with great interest. Cezar's passion for learning and the professionalism is evident. ",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    image: "/349473547_583253363934024_5336847008524097151_n-modified.png",
+    name: "Tarnovan Claudiu",
+    position: "Fullstack Engineer - ddroidd - 4 years experience",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "As a friend, I've seen how Cezar tackles challenges with optimism and a readiness to embrace new technologies and methodologies. I have no doubt that Cezar will achieve great things.",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    image: "/1594296786621-modified.png",
+    name: "Andrei Berintan",
+    position: "QA Engineer - jpard Solutions - 3 years experience",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Cezar has a keen eye for detail and a deep understanding of what makes a product not just functional, but exceptional.His skills and work ethic undoubtedly make him a valuable asset to any team.",
   },
 ];
 

@@ -9,10 +9,10 @@ const Header = () => {
         {/* logo */}
         <Link href={'/'}>
           <div>
-            <h1>Vlaescu Cezar</h1>
+            <h1>Vlaescu Cezar.</h1>
           </div>
         </Link>
-        {/*Socials*/}
+        {/* Socials */}
         <Socials />
        </div>
     </div>

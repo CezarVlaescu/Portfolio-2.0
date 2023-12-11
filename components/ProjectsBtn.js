@@ -13,7 +13,6 @@ const ProjectsBtn = () => {
     flex 
     justify-center 
     items-center
-    items-center
     bg-circleStar
     bg-cover
     bg-center

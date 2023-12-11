@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -40,7 +38,7 @@ const Home = () => {
             <ProjectsBtn />
           </div>
           <motion.div
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn('down', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -56,7 +54,6 @@ const Home = () => {
         <div
           className="
         bg-none 
-        xl:bg-explosion 
         xl:bg-cover 
         xl:bg-right 
         xl:bg-no-repeat 
